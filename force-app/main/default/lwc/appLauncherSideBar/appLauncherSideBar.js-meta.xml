@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+  <masterLabel>App Launcher Sidebar</masterLabel>
+  <description>A collapsible sidebar app launcher that presents a small tab to the user, then expands to reveal available apps when clicked.</description>
+  <capabilities>
+    <capability>lightningCommunity__RelaxedCSP</capability>
+  </capabilities>
+  <targets>
+    <target>lightningCommunity__Page</target>
+    <target>lightningCommunity__Default</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightningCommunity__Default">
+        <property label="Tab Text" name="tabText" type="string" default="My Apps" placeholder="Apps" description="Text displayed in the tab used to open or close the app launcher." />
+        <property label="Menu Header" name="menuHeader" type="string" default="Key Tools" placeholder="Your Apps" description="Text displayed above the items in the app launcher." />
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>
