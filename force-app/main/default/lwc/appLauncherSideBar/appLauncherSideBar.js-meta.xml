@@ -15,6 +15,8 @@
     <targetConfig targets="lightningCommunity__Default">
         <property label="Tab Text" name="tabText" type="string" default="My Apps" placeholder="Apps" description="Text displayed in the tab used to open or close the app launcher." />
         <property label="Menu Header" name="menuHeader" type="string" default="Key Tools" placeholder="Your Apps" description="Text displayed above the items in the app launcher." />
+        <property label="Ignore App Launcher Profile Perm" name="ignoreAppLauncherProfilePerm" type="boolean" default="false" description="When checked, the app launcher sidebar will display for all users instead of checking the 'Enable the App Launcher in Experience Builder Sites' permission." />
+        <property label="Display Internal Apps" name="showInternalApps" type="boolean" default="false" description="When checked, the app launcher sidebar will display apps in Lightning Experience when permission for them is granted." />
     </targetConfig>
   </targetConfigs>
 </LightningComponentBundle>
