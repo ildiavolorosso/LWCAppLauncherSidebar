@@ -1,80 +1,102 @@
 <template>
-    <div>{tabText}</div>
-    <div>
-        <h2>{menuHeader}</h2>
+    <div data-id="mySidebar" class="sidebar">
+        <div class="header_menu">
+            {menuHeader}
+        </div>
+      <a href="javascript:void(0)" class="closebtn" onclick={closeNav}>×</a>
+      <a href="#" class="button_app">
+        <div class="button_Link">
+          <div class="button_image">
+            <img src="https://i.imgur.com/V2fXTQ5.png" alt="Order beer with COIN"/>
+          </div>
+          <div class="button_text">
+            <div class="button_main_text">
+              Coin
+            </div>
+            <div class="button_detail_text">
+              Order Beer!
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="button_app">
+        <div class="button_Link">
+          <div class="button_image">
+            <img src="https://i.imgur.com/uJrln1l.png" alt="Order promotional materials with Beer Gear."/>
+          </div>
+          <div class="button_text">
+            <div class="button_main_text">
+              Bear Gear
+            </div>
+            <div class="button_detail_text">
+              Order Materials
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="button_app">
+        <div class="button_Link">
+          <div class="button_image">
+            <img src="https://i.imgur.com/XVmpV5D.png" alt="Forecast with Anaplan."/>
+          </div>
+          <div class="button_text">
+            <div class="button_main_text">
+              Anaplan
+            </div>
+            <div class="button_detail_text">
+              ABP &amp; Forecasting
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="button_app">
+        <div class="button_Link">
+          <div class="button_image">
+            <img src="https://i.imgur.com/REqBp3Z.png" alt="Manage user access with CIM."/>
+          </div>
+          <div class="button_text">
+            <div class="button_main_text">
+              CIM
+            </div>
+            <div class="button_detail_text">
+              Manage User Access
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="button_app">
+        <div class="button_Link">
+          <div class="button_image">
+            <img src="https://i.imgur.com/edQWtH0.png" alt="Order Point of Sale materials."/>
+          </div>
+          <div class="button_text">
+            <div class="button_main_text">
+              Point of Sales
+            </div>
+            <div class="button_detail_text">
+              Order POS Materials
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="button_app">
+        <div class="button_Link">
+          <div class="button_image">
+            <img src="https://i.imgur.com/1mO43NH.png" alt="Get selling materials with Open Tab"/>
+          </div>
+          <div class="button_text">
+            <div class="button_main_text">
+              Open Tab
+            </div>
+            <div class="button_detail_text">
+              Selling Materials
+            </div>
+          </div>
+        </div>
+      </a>
     </div>
-    <ul>
-        <li>
-            <div>
-                <div>
-                    <a href="#"><img src="https://i.imgur.com/V2fXTQ5.png" alt="Order beer with COIN"/></a>
-                </div>
-                <h3><a href="#">COIN</a></h3>
-                <div>Order beer</div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div>
-                    <a href="#"><img src="https://i.imgur.com/uJrln1l.png" alt="Order promotional materials with Beer Gear."/></a>
-                </div>
-                <h3><a href="#">BEER GEAR</a></h3>
-                <div>Order materials</div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div>
-                    <a href="#"><img src="https://i.imgur.com/XVmpV5D.png" alt="Forecast with Anaplan."/></a>
-                </div>
-                <h3><a href="#">ANAPLAN</a></h3>
-                <div>ABP & FORECASTING</div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div>
-                    <a href="#"><img src="https://i.imgur.com/REqBp3Z.png" alt="Manage user access with CIM."/></a>
-                </div>
-                <h3><a href="#">CIM</a></h3>
-                <div>Manage user access</div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div>
-                    <a href="#"><img src="https://i.imgur.com/VbgaIcJ.png" alt="Learn with Beer Sales Masters."/></a>
-                </div>
-                <h3><a href="#">BEER SALES MASTERS</a></h3>
-                <div>Learning platform</div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div>
-                    <a href="#"><img src="https://i.imgur.com/edQWtH0.png" alt="Order Point of Sale materials."/></a>
-                </div>
-                <h3><a href="#">POINT OF SALES</a></h3>
-                <div>Order POS materials</div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div>
-                    <a href="#"><img src="https://i.imgur.com/1mO43NH.png" alt="Get selling materials with Open Tab"/></a>
-                </div>
-                <h3><a href="#">OPEN TAB</a></h3>
-                <div>Selling materials</div>
-            </div>
-        </li>
-        <li>
-            <div>
-                <div>
-                    <a href="https://globalbrandcenter.cbrands.com/"><img src="https://i.imgur.com/eilrwsL.png" alt="Visit the Global Brand Center for digital assets."/></a>
-                </div>
-                <h3><a href="https://globalbrandcenter.cbrands.com/">GLOBAL BRAND CENTER</a></h3>
-                <div>Digital assets</div>
-            </div>
-        </li>
-    </ul>
+    
+    <div data-id="main_menu" class="main_menu">
+      <button class="openbtn" onclick={openNav}> {tabText}</button>  
+    </div>    
 </template>
